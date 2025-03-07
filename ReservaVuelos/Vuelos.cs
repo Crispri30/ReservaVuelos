@@ -24,7 +24,7 @@ namespace ReservaVuelos
             this.origen = origen;
             this.destino = destino;
             this.fecha_salida = fecha_salida;
-            this.cant_disponible = cant_disponible;
+            this.cant_disponible =  cant_disponible;
         }
         public override string ToString()
         {
