@@ -25,7 +25,7 @@ namespace ReservaVuelos
                 int codigo = int.Parse(txtCodigo.Text.Trim());
                 string origen = txtOrigen.Text.Trim();
                 string destino = txtDestino.Text.Trim();
-                DateTime fecha_salida = DateTime.Parse(txtFecha.Text);
+                DateTime fecha_salida = DateTime.Parse(dtpFechaSalida.Text);
                 int cant_disponible = int.Parse(txtNumDis.Text.Trim());
 
                 //Creacion nuevo vuelo de clase Vuelos
@@ -36,12 +36,11 @@ namespace ReservaVuelos
 
                 lista_vuelos.Add(new_vuelo);
 
-                listBox.Items.Add(new_vuelo);
+                listBoxVuelos.Items.Add(new_vuelo);
 
                 txtCodigo.Clear();
                 txtOrigen.Clear();
                 txtDestino.Clear();
-                txtFecha.Clear();
                 txtNumDis.Clear();
             }
             catch (Exception ex) {
@@ -53,6 +52,41 @@ namespace ReservaVuelos
         {
             FormReservas formReservas = new FormReservas(lista_vuelos);
             formReservas.Show();
+        }
+
+        private void txtOrigen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTituloBienvenida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormVuelos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxVuelos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
