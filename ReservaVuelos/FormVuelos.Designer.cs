@@ -232,7 +232,7 @@
             this.Controls.Add(this.lblOrigen);
             this.Controls.Add(this.lblCodigoVuelo);
             this.Name = "FormVuelos";
-            this.Text = "Form1";
+            this.Text = "FormAgregarVuelo";
             this.Load += new System.EventHandler(this.FormVuelos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
